@@ -7,38 +7,40 @@ html {
 	color: #000;
 }
 
-header, main, aside, footer {
-	display: block;
-}
-
 body {
-	margin: 0;
+	margin: 4em 10em;
 	font: 1em;
 	background: #fff;
 }
 
+a {
+  text-decoration: inherit;
+  font-style: inherit;
+  color: inherit;
+}
+
+a:link, a:visited {
+  border: none;
+  text-decoration: underline;
+  font-style: normal;
+  color: black;
+}
+
+a:focus {
+  outline: thin dotted;
+  text-decoration: none;
+  color: #000;
+  background-color: #999;
+}
+
+a:hover, a:active {
+  text-decoration: none;
+  color: #000;
+  background-color: #999;
+}
+
 .container {
-	margin: 0 auto;
-	width: 960px;
-	background: #3cf;
-}
-
-header {
-	padding: 2em;
-	text-align: center;
-	border-bottom: 1px solid #999;
-	background: #ccc;
-}
-
-main {
-	float: right;
-	width: 100%;
-	padding: 5%;
-	font-size: 1em;
-	line-height: 1.6;
-	background: #999;
-}
-
-footer {
-	font-size: 0.6em;
+  width: 70%;
+  margin-right: 15%;
+  margin-left: 15%;
 }
