@@ -17,46 +17,6 @@ body {
 	background: #fff;
 }
 
-.container {
-	margin: 0 auto;
-	width: 960px;
-	background: #fff;
-}
-
-header {
-	padding: 2em;
-	text-align: center;
-	border-bottom: 1px solid #999;
-	background: #ccc;
-}
-
-main {
-	float: right;
-	width: 60%;
-	padding: 5%;
-	font-size: 1em;
-	line-height: 1.6;
-	background: #fff;
-}
-
-aside {
-	float: right;
-	width: 26%;
-	padding: 2%;
-	font-size: 0.7em;
-	background: #fff;
-}
-
-footer {
-	clear: both;
-	padding: 1em 2em;
-	background: #ccc;
-}
-
-footer {
-	font-size: 0.6em;
-}
-
 h1 { 
   font-size: 2em;
 }
@@ -97,6 +57,55 @@ a:focus {
 
 li {
 	line-height: 1.6;
+}
+
+.caption {
+	font-size: 0.7em;
+	display: table;
+	margin: 0.3em auto 0em auto;
+}
+
+.centered {
+	display: table;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.container {
+	margin: 0 auto;
+	width: 960px;
+	background: #fff;
+}
+
+header {
+	padding: 2em;
+	text-align: center;
+	border-bottom: 1px solid #999;
+	background: #ccc;
+}
+
+main {
+	float: right;
+	width: 60%;
+	padding: 5%;
+	font-size: 1em;
+	line-height: 1.6;
+	background: #fff;
+}
+
+aside {
+	float: right;
+	width: 26%;
+	padding: 2%;
+	font-size: 0.7em;
+	background: #fff;
+}
+
+footer {
+	clear: both;
+	padding: 1em 2em;
+	font-size: 0.6em;
+	background: #fff;
 }
 
 .references {
