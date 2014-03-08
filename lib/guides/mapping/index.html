@@ -5,6 +5,8 @@
 	<title>Web Mapping Library Guide</title>
 	<meta name="author" content="Greg Reeve">
 	<meta name="description" content="Web mapping library guide. What is web mapping?">
+	<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
+	<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
 	<link rel='stylesheet' href='css/style.css'>
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -23,9 +25,17 @@
 
 <p>This <a href="about.html" title="About this library guide">library guide</a> is designed to assist university-level students and faculty to better understand web mapping and provide resources to aid them in creating their own online maps. Resources in this guide are available by clicking on the links under <strong>Contents</strong>. </p>
 
+<div id='map' style="position: relative; width: 100%; height: 400px;"></div>
+<figcaption class="caption">A simple interactive web map.</figcaption>
+
 <h1>What is web mapping?</h1>
 
 <p>Any digital map that is accessible on the World Wide Web can be considered a web map. There are many <a href="uses.html" title="Web mapping uses">different types of web maps</a> being authored and consumed on the web today. Web maps can help you find specific directions from one place to another, perform spatial analysis, or establish spatial context and reference. Numerous tools exist for anyone who has the desire to <a href="making.html" title="Making web maps">create their own web maps</a>. Web mapping is the synthesis of two major technological achievements: the World Wide Web (web) and cartography (mapping).</p>
+
+<figure class="centered">
+<img src="images/map_layers1.png" width="420" height="473" alt="Web maps are comprised of many layers in various formats depicting various data themes">
+<figcaption class="caption">Web maps are constructed of many layers in various formats and data themes.</figcaption>
+</figure>
 
 <h2>World Wide Web</h2>
 
@@ -34,6 +44,11 @@
 <p>With the growth and development of the internet in the late 1980s Tim Berners-Lee, an independent contractor at the European Organization for Nuclear Research (CERN) in Switzerland, along with another research collaborator, Robert Cailliau, looked to this new internet technology as a way for scientists to share data with other scientists throughout the world. Berners-Lee and Cailliau (1990) authored a proposal for a hypertext documents database with text links interconnecting the documents together (Gromov, 1995). This was the beginning of what is now known as the World World Web. The World Wide Web is the system of interlinked hypertext documents that are accessed over the internet. The World Wide Web is built using client-server technology where a client software program running on a local computer accesses a hypertext document from a remote server. Web browsers act as the client application that are programmed to display hypertext documents hosted on remove servers. Websites could then be created on the internet that would store interlinked hypertext documents that anyone could view with an internet connection and access to the World Wide Web. Along with the growth of the internet the World Wide Web has seen tremendous growth since its early beginnings in the late 1980s to early 1990s. It is projected that by the end of 2014 there will be 1 billion websites on the World Wide Web (Total number of websites, 2014). </p>
 
 <p>While the original set of websites on the World Wide Web were static in nature, improvements in computer and internet technologies made it possible for a more dynamic, interactive web. This focus on websites doing more than retrieving information for the user to passively consume has been termed Web 2.0 (O'Reilly, 2005). Web 2.0 establishes the World Wide Web as a participation platform where users contribute to as well as consume content. The Web 2.0 environment provided the opportunity to create unique mapping interfaces that aren't possible in a static, printed map. It also enabled a new class of map maker that may not be formally trained in the traditional methods of GIS and cartography. </p>
+
+<figure class="centered">
+<img src="images/webmap_arch.png" width="460" height="285" alt="Client-Server Architecture of a Web Map">
+<figcaption class="caption">The client-server architecture used in a web map.</figcaption>
+</figure>
 
 <h2>Cartography</h2>
 
@@ -100,6 +115,13 @@
 </footer>
 
 </div> <!-- div container -->
+
+<script>
+var map = new L.mapbox.map('map', 'examples.map-9ijuk24y', {
+	center: new L.LatLng(40, -100),
+	zoom: 3
+});
+</script>
 
 </body>
 </html>
