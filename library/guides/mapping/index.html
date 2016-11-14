@@ -5,8 +5,9 @@
 	<title>Web Mapping Library Guide</title>
 	<meta name="author" content="Greg Reeve">
 	<meta name="description" content="Web mapping library guide. What is web mapping?">
-	<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
-	<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
 	<link rel='stylesheet' href='css/style.css'>
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -121,7 +122,8 @@
 </div> <!-- div container -->
 
 <script>
-var map = new L.mapbox.map('map', 'examples.map-i86nkdio', {
+L.mapbox.accessToken = 'pk.eyJ1IjoiZ3JlZXZlIiwiYSI6ImNpdmluZTJjcjAyNDkyenAzYzdvOXZicWgifQ.lBa_c91LYykmgGkdHQOqeg';
+var map = new L.mapbox.map('map', 'mapbox.streets', {
 	center: new L.LatLng(40, -100),
 	zoom: 3
 });
